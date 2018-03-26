@@ -1,9 +1,4 @@
 # HelloWorld
 Beginner tutorial
 
-Hi,
-
-This is a baby project for my practice of use Guthub!!!!
-
-Best,
-CCC
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
