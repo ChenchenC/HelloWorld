@@ -5,8 +5,14 @@
         "hub_name": {
             "type": "string"
         },
-        "location": {
-            "type": "string"
+         "location": {
+            "type": "string",
+            "defaultValue": "westeurope",
+            "allowedValues": [
+                "East US",
+                "West US",
+                "westeurope"
+            ]
         },
         "sku_name": {
             "type": "string"
