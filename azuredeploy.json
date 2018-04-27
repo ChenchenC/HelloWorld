@@ -13,18 +13,6 @@
                 "West US",
                 "westeurope"
             ]
-        },
-        "sku_name": {
-            "type": "string",
-            "value": "F1"
-        },
-        "sku_units": {
-            "type": "string",
-            "value": "1"
-        },
-        "d2c_partitions": {
-            "type": "string",
-            "value": "2"
         }
       
     },
@@ -32,8 +20,8 @@
         {
             "type": "Microsoft.Devices/IotHubs",
             "sku": {
-                "name": "[parameters('sku_name')]",
-                "capacity": "[parameters('sku_units')]"
+                "name": "F1",
+                "capacity": "1"
             },
             "name": "[parameters('hub_name')]",
             "apiVersion": "2016-02-03",
@@ -42,7 +30,7 @@
                 "eventHubEndpoints": {
                     "events": {
                         "retentionTimeInDays": 1,
-                        "partitionCount": "[parameters('d2c_partitions')]"
+                        "partitionCount": "2"
                     }
                 }
             }
