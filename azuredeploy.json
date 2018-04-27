@@ -5,7 +5,7 @@
         "hub_name": {
             "type": "string"
         },
-         "location": {
+        "location": {
             "type": "string",
             "defaultValue": "westeurope",
             "allowedValues": [
@@ -15,17 +15,18 @@
             ]
         },
         "sku_name": {
-            "type": "string"
+            "type": "string",
+            "value": "F1"
         },
         "sku_units": {
-            "type": "string"
+            "type": "string",
+            "value": "1"
         },
         "d2c_partitions": {
-            "type": "string"
-        },
-        "features": {
-            "type": "string"
+            "type": "string",
+            "value": "2"
         }
+      
     },
     "resources": [
         {
@@ -43,8 +44,7 @@
                         "retentionTimeInDays": 1,
                         "partitionCount": "[parameters('d2c_partitions')]"
                     }
-                },
-                "features": "[parameters('features')]"
+                }
             }
         }
     ]
