@@ -21,7 +21,7 @@
             "type": "Microsoft.Devices/IotHubs",
             "sku": {
                 "name": "F1",
-                "capacity": "1"
+                "capacity": 1
             },
             "name": "[parameters('hub_name')]",
             "apiVersion": "2016-02-03",
