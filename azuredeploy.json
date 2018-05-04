@@ -16,10 +16,7 @@
     },
     "solutionName": {
       "type": "string",
-      "maxLength": 16,
-      "metadata": {
-        "description": "The name of your ConnectTheDots solution (will be used to prefix the services names)"
-      }
+      "maxLength": 16
     },
     "iotHubSku": {
       "type": "string",
